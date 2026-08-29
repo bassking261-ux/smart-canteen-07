@@ -1,16 +1,31 @@
 const loginForm = document.getElementById("loginForm");
 
-loginForm.addEventListener("submit", function(event) {
+loginForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
+    const studentName =
+        document.getElementById("studentName").value.trim();
+
+    const college =
+        document.getElementById("college").value.trim();
+
+    const department =
+        document.getElementById("department").value;
+
+    const year =
+        document.getElementById("year").value;
+
+    if (!studentName || !college || !department || !year) {
+        alert("Please fill all details!");
+        return;
+    }
+
     const student = {
-
-        name: document.getElementById("studentName").value,
-        college: document.getElementById("college").value,
-        department: document.getElementById("department").value,
-        year: document.getElementById("year").value
-
+        name: studentName,
+        college: college,
+        department: department,
+        year: year
     };
 
     localStorage.setItem(
