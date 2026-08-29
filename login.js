@@ -4,11 +4,8 @@ loginForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
-    const studentName =
+    const name =
         document.getElementById("studentName").value.trim();
-
-    const college =
-        document.getElementById("college").value.trim();
 
     const department =
         document.getElementById("department").value;
@@ -16,23 +13,33 @@ loginForm.addEventListener("submit", function (event) {
     const year =
         document.getElementById("year").value;
 
-    if (!studentName || !college || !department || !year) {
-        alert("Please fill all details!");
+
+    if (name === "" || year === "") {
+
+        alert("Please enter your name and select your year!");
+
         return;
     }
 
+
     const student = {
-        name: studentName,
-        college: college,
+
+        name: name,
+
         department: department,
+
         year: year
+
     };
+
 
     localStorage.setItem(
         "student",
         JSON.stringify(student)
     );
 
+
+    // Go to Home Page
     window.location.href = "home.html";
 
 });
