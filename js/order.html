@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>My Order - Smart Canteen</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="brand">
+🍔 SmartBite
+</div>
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="order.html">🛒 Order</a>
+
+<a href="account.html">👤 Account</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="order-page">
+
+<h1>My Order 🛒</h1>
+
+<p>
+Review your food before placing the order.
+</p>
+
+
+<div id="orderItems"></div>
+
+
+<div class="total-box">
+
+<span>Total Amount</span>
+
+<strong id="totalAmount">
+₹0
+</strong>
+
+</div>
+
+
+<label>
+Pickup Time
+</label>
+
+<select id="pickupTime">
+
+<option>As soon as possible</option>
+
+<option>12:30 PM</option>
+
+<option>12:45 PM</option>
+
+<option>1:00 PM</option>
+
+<option>1:15 PM</option>
+
+<option>1:30 PM</option>
+
+</select>
+
+
+<button
+class="place-order"
+onclick="placeOrder()">
+
+🚀 Place Order
+
+</button>
+
+</section>
+
+</main>
+
+
+<script src="js/order.js"></script>
+
+</body>
+
+</html>
