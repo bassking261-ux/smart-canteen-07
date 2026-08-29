@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Smart Canteen - Student Login</title>
+    <title>SmartBite - Student Login</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<div class="login-container">
+    <div class="login-container">
 
-    <div class="login-box">
+        <div class="login-box">
 
-        <div class="logo">🍔</div>
+            <div class="logo">🍔</div>
 
-        <h1>Smart Canteen</h1>
+            <h1>SmartBite</h1>
 
-        <p class="subtitle">
-            Intelligent Campus Food Ordering
-        </p>
+            <p class="subtitle">
+                Smart Canteen Ordering
+            </p>
 
-        <form id="loginForm">
+            <form id="loginForm">
 
-            <label>Student Name</label>
-            <input
-                type="text"
-                id="studentName"
-                placeholder="Enter your name"
-                required
-            >
+                <!-- Student Name -->
+                <label>Student Name</label>
 
-            <label>College Name</label>
-            <input
-                type="text"
-                id="college"
-                placeholder="Enter college name"
-                required
-            >
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
 
-            <label>Department</label>
-            <select id="department" required>
-                <option value="">Select Department</option>
-                <option>CSE</option>
-                <option>IT</option>
-                <option>ECE</option>
-                <option>EEE</option>
-                <option>Mechanical</option>
-                <option>Civil</option>
-                <option>BCA</option>
-                <option>MCA</option>
-            </select>
 
-            <label>Year</label>
-            <select id="year" required>
-                <option value="">Select Year</option>
-                <option>1st Year</option>
-                <option>2nd Year</option>
-                <option>3rd Year</option>
-                <option>4th Year</option>
-            </select>
+                <!-- Department -->
+                <label>Department</label>
 
-            <button type="submit">
-                Enter Canteen →
-            </button>
+                <input
+                    type="text"
+                    value="B.Sc DS & AI"
+                    readonly
+                >
 
-        </form>
+                <input
+                    type="hidden"
+                    id="department"
+                    value="B.Sc DS & AI"
+                >
+
+
+                <!-- Year -->
+                <label>Year</label>
+
+                <select id="year" required>
+
+                    <option value="">
+                        Select Year
+                    </option>
+
+                    <option value="1st Year">
+                        1st Year
+                    </option>
+
+                    <option value="2nd Year">
+                        2nd Year
+                    </option>
+
+                    <option value="3rd Year">
+                        3rd Year
+                    </option>
+
+                </select>
+
+
+                <!-- Login Button -->
+                <button type="submit">
+                    Login →
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 
-</div>
 
-<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
+
 </html>
