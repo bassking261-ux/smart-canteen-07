@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Canteen - Student Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <div class="logo">🍔</div>
+
+        <h1>Smart Canteen</h1>
+
+        <p class="subtitle">
+            Intelligent Campus Food Ordering
+        </p>
+
+        <form id="loginForm">
+
+            <label>Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>College Name</label>
+            <input
+                type="text"
+                id="college"
+                placeholder="Enter college name"
+                required
+            >
+
+            <label>Department</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Year</label>
+            <select id="year" required>
+                <option value="">Select Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+
+            <button type="submit">
+                Enter Canteen →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
