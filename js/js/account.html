@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>My Account - Smart Canteen</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="brand">
+🍔 SmartBite
+</div>
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a href="order.html">🛒 Order</a>
+
+<a href="account.html">👤 Account</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="account-page">
+
+<div class="profile-card">
+
+<div class="profile-icon">
+👤
+</div>
+
+<h1 id="name">
+Student
+</h1>
+
+<p id="college"></p>
+
+<p id="department"></p>
+
+<p id="year"></p>
+
+</div>
+
+
+<div class="account-stats">
+
+<div>
+
+<span>Total Orders</span>
+
+<strong id="orderCount">
+0
+</strong>
+
+</div>
+
+
+<div>
+
+<span>Total Spent</span>
+
+<strong id="totalSpent">
+₹0
+</strong>
+
+</div>
+
+
+<div>
+
+<span>Canteen Kadan</span>
+
+<strong id="kadan">
+₹0
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="kadan-card">
+
+<span>💳 CANTEEN CREDIT</span>
+
+<h2>
+Your Canteen Kadan
+</h2>
+
+<strong id="kadanLarge">
+₹0
+</strong>
+
+<p>
+Outstanding canteen credit
+</p>
+
+<button onclick="addKadan()">
+
++ Add Demo Kadan
+
+</button>
+
+<button onclick="clearKadan()">
+
+Clear Kadan
+
+</button>
+
+</div>
+
+
+<h2 class="recent-title">
+Recent Orders
+</h2>
+
+
+<div id="recentOrders"></div>
+
+
+</section>
+
+</main>
+
+
+<script src="js/account.js"></script>
+
+</body>
+
+</html>
