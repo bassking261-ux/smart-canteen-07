@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Canteen - Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+        🍔 SmartBite
+    </div>
+
+    <nav>
+
+        <a href="home.html">Home</a>
+
+        <a href="order.html">
+            🛒 Order
+        </a>
+
+        <a href="account.html">
+            👤 Account
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="welcome">
+
+    <div>
+
+        <p>Welcome back 👋</p>
+
+        <h1 id="studentWelcome">
+            Student
+        </h1>
+
+        <span id="studentInfo"></span>
+
+    </div>
+
+    <div class="queue">
+
+        🟢 Canteen Queue
+
+        <strong>
+            Low Crowd
+        </strong>
+
+        <small>
+            Estimated waiting: 5–8 mins
+        </small>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="section-title">
+
+        <div>
+            <span>TODAY'S MENU</span>
+            <h2>What would you like?</h2>
+        </div>
+
+    </div>
+
+
+    <div class="food-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">🍛</div>
+
+            <h3>Veg Meals</h3>
+
+            <p>Full meals with rice, curry and sides</p>
+
+            <div class="food-bottom">
+
+                <strong>₹80</strong>
+
+                <button onclick="addToCart('Veg Meals',80,'🍛')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🍗</div>
+
+            <h3>Chicken Biryani</h3>
+
+            <p>Delicious chicken biryani</p>
+
+            <div class="food-bottom">
+
+                <strong>₹120</strong>
+
+                <button onclick="addToCart('Chicken Biryani',120,'🍗')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🥞</div>
+
+            <h3>Masala Dosa</h3>
+
+            <p>Crispy dosa with sambar and chutney</p>
+
+            <div class="food-bottom">
+
+                <strong>₹60</strong>
+
+                <button onclick="addToCart('Masala Dosa',60,'🥞')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🍔</div>
+
+            <h3>Veg Burger</h3>
+
+            <p>Fresh vegetable burger</p>
+
+            <div class="food-bottom">
+
+                <strong>₹90</strong>
+
+                <button onclick="addToCart('Veg Burger',90,'🍔')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🍜</div>
+
+            <h3>Veg Noodles</h3>
+
+            <p>Hot and spicy vegetable noodles</p>
+
+            <div class="food-bottom">
+
+                <strong>₹70</strong>
+
+                <button onclick="addToCart('Veg Noodles',70,'🍜')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">☕</div>
+
+            <h3>Filter Coffee</h3>
+
+            <p>Fresh South Indian filter coffee</p>
+
+            <div class="food-bottom">
+
+                <strong>₹25</strong>
+
+                <button onclick="addToCart('Filter Coffee',25,'☕')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🥪</div>
+
+            <h3>Sandwich</h3>
+
+            <p>Fresh vegetable sandwich</p>
+
+            <div class="food-bottom">
+
+                <strong>₹55</strong>
+
+                <button onclick="addToCart('Sandwich',55,'🥪')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <div class="food-image">🥤</div>
+
+            <h3>Fresh Juice</h3>
+
+            <p>Fresh and chilled fruit juice</p>
+
+            <div class="food-bottom">
+
+                <strong>₹40</strong>
+
+                <button onclick="addToCart('Fresh Juice',40,'🥤')">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="js/home.js"></script>
+
+</body>
+</html>
